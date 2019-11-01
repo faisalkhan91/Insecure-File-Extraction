@@ -3,7 +3,7 @@
 #############################################################################################
 #                               Program by Mohammed Faisal Khan                             #
 #                               Email: faisalkhan91@outlook.com                             #
-#                               Created on October 8, 2019                                 #
+#                               Created on October 8, 2019                                  #
 #############################################################################################
 
 # Importing modules
